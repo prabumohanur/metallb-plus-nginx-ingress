@@ -29,7 +29,7 @@ strictARP: true
      $ kubectl api-resources| grep metallb
 
    # step 2-3
-     Create IP Pool
+     Create IP Pool (make sure you are using your valied ip segment for accessing the app through your network)
      $ kubectl -n metallb-system apply -f pool-1.yml
 
    # step 2-4
